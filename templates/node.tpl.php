@@ -97,7 +97,10 @@
             <span class="year date"><?php print $date_year ?></span> |
             <strong><?php print t('On : ') ?></strong> 
             <span class="section-field"><?php print render($content['field_sections']); ?></span> |
+            <?php  $statics = $content['links']['statistics']['#links']['statistics_counter']['title'] ?>
+            <?php print T('visitors') ?> : <span class="statics-text"><strong><?php print render($statics) ?></strong></span>
           </div>
+          
         <?php endif; ?>
       </div>
       <div class="col-md-3 col-sm-12">
