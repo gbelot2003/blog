@@ -98,7 +98,9 @@
             <strong><?php print t('On : ') ?></strong> 
             <span class="section-field"><?php print render($content['field_sections']); ?></span> |
             <?php  $statics = $content['links']['statistics']['#links']['statistics_counter']['title'] ?>
+            <?php if(isset($statics)) : ?>
             <?php print T('visitors') ?> : <span class="statics-text"><strong><?php print render($statics) ?></strong></span>
+            <?php endif;  ?>
           </div>
           
         <?php endif; ?>
